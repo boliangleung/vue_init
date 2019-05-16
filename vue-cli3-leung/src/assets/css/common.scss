@@ -1,0 +1,43 @@
+$redColor: #eb6262;
+%columnFlex {
+  @extend %displayFlex;
+  flex-direction: column;
+}
+/* 混合宏 */
+//position:fixed 固定的位置
+@mixin psFixed($fixSeat, $fixHeight: 88px) {
+  position: fixed;
+  left: 0;
+  z-index: 99;
+  width: 100%;
+  min-height: $fixHeight;
+  @if $fixSeat==top {
+    top: 0;
+  } @else {
+    bottom: 0;
+  }
+}
+
+//文本省略。。。
+@mixin textEllipsis($height, $width, $clamp: 1, $font-size: 28px) {
+  width: $width;
+  height: $height;
+  color: $simpleGray;
+  font-size: $font-size;
+  //$clamp 默认为1 超过单行就换行 2的话 第二行换行
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  @if $clamp==1 {
+    white-space: nowrap; //不换行
+  } @else {
+    display: -webkit-box;
+    display: box;
+    line-clamp: $clamp;
+    -webkit-line-clamp: $clamp; //块元素显示的文本行数
+  }
+}
+// border样式
+@mixin commonBorder($borerSeat: bottom, $color: $borderColor, $px: 1px) {
+  border-#{$borerSeat}: $px solid $color;
+}

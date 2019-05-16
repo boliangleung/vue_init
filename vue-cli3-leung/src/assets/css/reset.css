@@ -1,0 +1,164 @@
+/*重置*/
+
+body, h1, h2, h3, h4, h5, p, dl, dd, ol, ul, th, td, form, fieldset, input, button, textarea {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  font-family: "microsoft yahei";
+}
+
+body {
+  background: #F5F5F5;
+}
+
+html {
+  -webkit-text-size-adjust: none;
+  word-wrap: break-word;
+  width: 100%;
+}
+
+ol, ul {
+  list-style: none
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  empty-cells: show;
+  font-size: inherit
+}
+
+fieldset, img {
+  border: 0
+}
+
+html, body, .content {
+  height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "microsoft yahei";
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  display: block;
+  border: none;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+}
+
+button {
+  outline: none;
+}
+
+a:link, a:visited, a:hover, a:active {
+  outline: none;
+}
+
+input[type="submit"], input[type="reset"], input[type="button"], input[type="text"], input[type="number "], button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+input::-webkit-input-placeholder {
+  font-size: 16px;
+  color: #7c7c7c;
+}
+
+input:-moz-placeholder {
+  font-size: 16px;
+  color: #7c7c7c;
+}
+
+input:-ms-input-placeholder {
+  font-size: 16px;
+  color: #7c7c7c;
+}
+
+input {
+  font-size: 16px;
+  color: #3F3F3F;
+}
+
+.ml-16px {
+  margin-left: 16px;
+}
+
+.ml-24px {
+  margin-left: 24px;
+}
+
+.mr-30px {
+  margin-right: 22px;
+}
+
+.mr-32px {
+  margin-right: 32px;
+}
+
+.mr-96px {
+  margin-right: 96px;
+}
+
+.mb-6px {
+  margin-bottom: 6px;
+}
+
+.mb-8px {
+  margin-bottom: 8px;
+}
+
+.mb-20px {
+  margin-bottom: 20px;
+}
+
+.mb-131px {
+  margin-bottom: 131px;
+}
+
+.mt-88px {
+  margin-top: 88px;
+}
+
+.pl-24px {
+  padding-left: 24px;
+}
+
+.pl-30px {
+  padding-left: 30px;
+}
+
+.pr-30px {
+  padding-right: 30px;
+}
+
+.pb-128px {
+  padding-bottom: 128px;
+}
+
+/* .restCSS {
+  font-size: 50px;
+} */
