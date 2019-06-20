@@ -2,12 +2,25 @@
   <div id="app">
     <div id="nav">
       <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <a @click="goAbout">About</a>
     </div>
     <!-- <div class="restCSS">textCSS</div> -->
     <router-view />
   </div>
 </template>
+<script>
+export default {
+  data () {
+    return {
+    }
+  },
+  methods: {
+    goAbout () {
+      this.$router.push({ path: './about', query: { name: 'lbl', num: '10086' } })
+    }
+  }
+}
+</script>
 
 <style lang="scss">
 #app {

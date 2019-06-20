@@ -9,12 +9,18 @@
 </template>
 
 <script>
+import { getClinc } from '@/fetch/api'
 // @ is an alias to /src
 import { HelloWorld } from '@/components/common'
 export default {
   name: 'home',
   components: {
     HelloWorld
+  },
+  created () {
+    getClinc({}).then(res => {
+      console.log(res)
+    })
   }
 }
 </script>

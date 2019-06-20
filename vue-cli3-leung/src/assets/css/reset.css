@@ -159,6 +159,13 @@ input {
   padding-bottom: 128px;
 }
 
+/* 测试rem */
+
+p {
+  /* width: 750px; */
+  font-size: 36px;
+}
+
 /* .restCSS {
   font-size: 50px;
 } */
