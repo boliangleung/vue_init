@@ -44,7 +44,7 @@ const routes = [
     //   num: route.query.num
     // })
     // props:true 针对于name路由的跳转 这个是Path的跳转
-    props: router => router.query
+    props: route => route.query
   }
 ]
 
